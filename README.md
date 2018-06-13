@@ -8,10 +8,10 @@ The PSS Divergence Detector identifies the following types of divergences:
 ## KernelHaven Setup
 In order to detect unintended divergences, the analysis plug-in must be combined with the [Problem-Solution-Space Mapper analysis plug-in](https://github.com/KernelHaven/ProblemSolutionSpaceMapperAnalysis). A particular configuration file for executing this analysis plug-in should contain the following information:
 
-```
-#####################
-#     Directores    #
-#####################
+```Properties
+######################
+#     Directories    #
+######################
 resource_dir = res/
 output_dir = output/
 plugins_dir = plugins/
