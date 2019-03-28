@@ -99,7 +99,7 @@ public abstract class Divergence implements ITableRow {
      * 
      * @param sourceFile the {@link SourceFile} involved in this divergence
      */
-    public void addInvolvedSourceFile(@NonNull SourceFile sourceFile) {
+    public void addInvolvedSourceFile(@NonNull SourceFile<?> sourceFile) {
         involvedSourceFiles.add(sourceFile);
     }
     
@@ -109,7 +109,7 @@ public abstract class Divergence implements ITableRow {
      * 
      * @param sourceFiles the collection of {@link SourceFile}s involved in this divergence
      */
-    public void addInvolvedSourceFiles(@NonNull Collection<SourceFile> sourceFiles) {
+    public void addInvolvedSourceFiles(@NonNull Collection<SourceFile<?>> sourceFiles) {
         involvedSourceFiles.addAll(sourceFiles);
     }
     
@@ -129,7 +129,7 @@ public abstract class Divergence implements ITableRow {
      * 
      * @param codeElements the collection of {@link CodeElement}s involved in this divergence
      */
-    public void addInvolvedCodeElements(@NonNull Collection<CodeElement> codeElements) {
+    public void addInvolvedCodeElements(@NonNull Collection<CodeElement<?>> codeElements) {
         involvedCodeElements.addAll(codeElements);
     }
 
